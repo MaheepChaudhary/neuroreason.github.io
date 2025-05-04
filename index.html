@@ -472,6 +472,72 @@
             color: rgba(255, 255, 255, 0.7);
             font-size: 0.875rem;
         }
+
+        /* Partners Section */
+        .partners {
+            padding: 5rem 0;
+            background-color: white;
+            overflow: hidden;
+        }
+        
+        .partners-scroll-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            margin-top: 3rem;
+        }
+        
+        .partners-track {
+            display: flex;
+            animation: scroll 20s linear infinite;
+        }
+        
+        .partners-track:hover {
+            animation-play-state: paused;
+        }
+        
+        .partner-logo {
+            flex: 0 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 150px;
+            margin: 0 0.1rem;  /* Changed from 2rem to 1rem to reduce gap by half */
+            min-width: 300px;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        
+        .partner-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+        
+        .partner-logo img {
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+        }
+        
+        @keyframes scroll {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-50%);
+            }
+        }
+        
+        /* Duplicate the logos for infinite scroll */
+        .partners-track::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 100%;
+            width: 100%;
+            height: 100%;
+        }
         
         /* Responsive */
         @media (max-width: 1024px) {
@@ -506,6 +572,11 @@
             .solution-grid {
                 grid-template-columns: 1fr;
             }
+
+            .partner-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
         }
         
         @media (max-width: 640px) {
@@ -517,6 +588,10 @@
             
             .nav-links {
                 display: none;
+            }
+
+            .partner-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -667,33 +742,6 @@
                     <h3>Role-Based Access</h3>
                     <p>Enterprise-grade security with granular permissions and access controls tailored to your organizational structure, ensuring data protection.</p>
                 </div>
-                <!-- <div class="feature-card">
-                    <div class="feature-card-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                        </svg>
-                    </div> -->
-                    <!-- <h3>Departmental AI</h3>
-                    <p>Specialized AI models for different departments with tailored knowledge bases, personalities, and capabilities to meet diverse organizational needs.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                        </svg>
-                    </div>
-                    <h3>Performance Analytics</h3>
-                    <p>Comprehensive dashboards with real-time metrics on AI usage, performance, accuracy, and compliance status for continuous optimization.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-card-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
-                        </svg>
-                    </div>
-                    <h3>Seamless Integration</h3>
-                    <p>Effortless integration with your existing systems through robust APIs and customizable connectors, ensuring minimal disruption to operations.</p>
-                </div> -->
             </div>
         </div>
     </section>
@@ -804,6 +852,83 @@
         </div>
     </section>
 
+    <!-- Partners Section -->
+    <section class="partners">
+        <div class="container">
+            <div class="section-title">
+                <h2>Supporting Partners</h2>
+                <p>Trusted by leading institutions and organizations</p>
+            </div>
+            <div class="partners-scroll-container">
+                <div class="partners-track">
+                    <!-- First set of logos -->
+                    <a href="https://www.ntu.edu.sg" target="_blank" rel="noopener noreferrer">
+                        <div class="partner-logo">
+                            <img src="partners/ntu.jpg" alt="Partner Institution 1" />
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.ox.ac.uk" target="_blank" rel="noopener noreferrer">
+                        <div class="partner-logo">
+                            <img src="partners/oxford.jpg" alt="Partner Institution 2" />
+                        </div>
+                    </a>
+                    
+                    <a href="https://impactacademy.org" target="_blank" rel="noopener noreferrer">
+                        <div class="partner-logo">
+                            <img src="partners/impact_academy.jpg" alt="Partner Institution 3" />
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.stanford.edu" target="_blank" rel="noopener noreferrer">
+                        <div class="partner-logo">
+                            <img src="partners/stanford.jpg" alt="Partner Institution 4" />
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.whiteboxresearch.org" target="_blank" rel="noopener noreferrer">
+                        <div class="partner-logo">
+                            <img src="partners/whitebox.png" alt="Partner Institution 5" />
+                        </div>
+                    </a>
+                    <!-- <div class="partner-logo">
+                        <img src="/api/placeholder/200/80" alt="Partner Institution 6" />
+                    </div>
+                    <!-- Duplicate set for seamless infinite scroll -->
+                    <a href="https://www.ntu.edu.sg" target="_blank" rel="noopener noreferrer">
+                        <div class="partner-logo">
+                            <img src="partners/ntu.jpg" alt="Partner Institution 1" />
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.ox.ac.uk" target="_blank" rel="noopener noreferrer">
+                        <div class="partner-logo">
+                            <img src="partners/oxford.jpg" alt="Partner Institution 2" />
+                        </div>
+                    </a>
+                    
+                    <a href="https://impactacademy.org" target="_blank" rel="noopener noreferrer">
+                        <div class="partner-logo">
+                            <img src="partners/impact_academy.jpg" alt="Partner Institution 3" />
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.stanford.edu" target="_blank" rel="noopener noreferrer">
+                        <div class="partner-logo">
+                            <img src="partners/stanford.jpg" alt="Partner Institution 4" />
+                        </div>
+                    </a>
+                    
+                    <a href="https://www.whiteboxresearch.org" target="_blank" rel="noopener noreferrer">
+                        <div class="partner-logo">
+                            <img src="partners/whitebox.png" alt="Partner Institution 5" />
+                        </div>
+                    </a>-->
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Section -->
     <section id="contact" class="cta">
         <div class="container">
@@ -859,18 +984,11 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
-                <!-- <div>
-                    <h4 class="footer-heading">Resources</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">Case Studies</a></li>
-                        <li><a href="#">API Reference</a></li>
-                    </ul>
-                </div> -->
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 NeuroReason. All rights reserved.</p>
             </div>
         </div>
     </footer>
+</body>
+</html>
