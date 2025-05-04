@@ -474,52 +474,73 @@
         }
 
         /* Partners Section */
+        /* Partners Section */
         .partners {
             padding: 5rem 0;
             background-color: white;
             overflow: hidden;
         }
-        
+
         .partners-scroll-container {
             position: relative;
             width: 100%;
             overflow: hidden;
             margin-top: 3rem;
         }
-        
+
         .partners-track {
             display: flex;
             animation: scroll 20s linear infinite;
         }
-        
+
         .partners-track:hover {
             animation-play-state: paused;
         }
-        
+
         .partner-logo {
             flex: 0 0 auto;
             display: flex;
             align-items: center;
             justify-content: center;
             height: 150px;
-            margin: 0 0.1rem;  /* Changed from 2rem to 1rem to reduce gap by half */
+            margin: 0 0.1rem;
             min-width: 300px;
-            filter: grayscale(100%);
-            opacity: 0.7;
-            transition: all 0.3s ease;
+            padding: 10px;
+            border-radius: 5px;
+            background: rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, background 0.3s ease;
         }
-        
-        .partner-logo:hover {
-            filter: grayscale(0%);
-            opacity: 1;
+
+        /* Link styling */
+        /* Link styling */
+        .partners-track a {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            cursor: pointer;
         }
-        
+
+        /* Hover effect for partner logos */
+        .partners-track a:hover .partner-logo {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Image styling */
         .partner-logo img {
             max-height: 100%;
             max-width: 100%;
             object-fit: contain;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: filter 0.3s ease, opacity 0.3s ease;
         }
-        
+
+        /* Hover effect for images */
+        .partners-track a:hover .partner-logo img {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
         @keyframes scroll {
             from {
                 transform: translateX(0);
