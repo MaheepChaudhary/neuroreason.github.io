@@ -6,16 +6,18 @@
     <title>WhiteGen.ai - AI Governance Research & Solutions</title>
     <style>
         :root {
-            --primary: #1e40af;
-            --primary-light: #3b82f6;
-            --accent: #6b7280;
-            --accent-light: #9ca3af;
-            --dark: #0f172a;
-            --light: #f8fafc;
-            --gray: #64748b;
-            --light-gray: #e2e8f0;
-            --research-blue: #1e3a8a;
-            --silver: #e5e7eb;
+            --primary: #2c2c2c;
+            --primary-light: #4a4a4a;
+            --accent: #8b8680;
+            --accent-light: #a8a399;
+            --dark: #1a1a1a;
+            --light: #f7f5f3;
+            --gray: #6b6b6b;
+            --light-gray: #e8e6e3;
+            --research-blue: #2c2c2c;
+            --silver: #d4d2cf;
+            --cream: #f0ede8;
+            --warm-gray: #9c9892;
         }
         
         * {
@@ -61,7 +63,7 @@
         
         .tagline {
             font-size: 1.5rem;
-            color: var(--primary-light);
+            color: var(--accent);
             font-weight: 500;
             margin-bottom: 2rem;
         }
@@ -85,7 +87,7 @@
         .btn-primary {
             background-color: var(--primary);
             color: white!important;
-            box-shadow: 0 4px 6px rgba(30, 64, 175, 0.25);
+            box-shadow: 0 4px 6px rgba(44, 44, 44, 0.25);
         }
 
         
@@ -93,7 +95,7 @@
         .btn-primary:hover {
             background-color: var(--primary-light);
             transform: translateY(-2px);
-            box-shadow: 0 6px 8px rgba(30, 64, 175, 0.3);
+            box-shadow: 0 6px 8px rgba(44, 44, 44, 0.3);
         }
         
         .btn-secondary {
@@ -103,7 +105,7 @@
         }
         
         .btn-secondary:hover {
-            background-color: rgba(30, 64, 175, 0.05);
+            background-color: rgba(44, 44, 44, 0.05);
             transform: translateY(-2px);
         }
         
@@ -159,7 +161,7 @@
         
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            background: linear-gradient(135deg, var(--cream) 0%, var(--light-gray) 100%);
             padding: 6rem 0;
             position: relative;
             overflow: hidden;
@@ -172,7 +174,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="30" fill="%236b7280" opacity="0.1"/></svg>');
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="50" cy="50" r="30" fill="%23a8a399" opacity="0.1"/></svg>');
             background-size: 300px 300px;
             opacity: 0.5;
         }
@@ -243,7 +245,7 @@
         }
         
         .feature-icon {
-            background-color: rgba(30, 64, 175, 0.1);
+            background-color: rgba(44, 44, 44, 0.1);
             width: 40px;
             height: 40px;
             border-radius: 50%;
@@ -273,12 +275,13 @@
         }
         
         .feature-card {
-            background-color: var(--light);
+            background-color: var(--cream);
             border-radius: 0.5rem;
             padding: 2rem;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             height: 100%;
+            border: 1px solid var(--silver);
         }
         
         .feature-card:hover {
@@ -287,7 +290,7 @@
         }
         
         .feature-card-icon {
-            background-color: rgba(30, 64, 175, 0.1);
+            background-color: rgba(44, 44, 44, 0.1);
             width: 60px;
             height: 60px;
             border-radius: 50%;
@@ -324,6 +327,7 @@
             height: 100%;
             display: flex;
             flex-direction: column;
+            border: 1px solid var(--silver);
         }
         
         .research-card:hover {
@@ -339,13 +343,13 @@
         
         .research-authors {
             font-size: 0.9rem;
-            color: var(--gray);
+            color: var(--warm-gray);
             margin-bottom: 0.5rem;
         }
         
         .research-date {
             font-size: 0.9rem;
-            color: var(--gray);
+            color: var(--warm-gray);
             margin-bottom: 1rem;
         }
         
@@ -667,7 +671,7 @@
                 <h3 style="margin-bottom: 2rem; color: var(--primary); font-size: 2rem;">Our Research Mission</h3>
                 <p style="font-size: 1.2rem; margin-bottom: 2rem; line-height: 1.7;">We conduct foundational research in AI alignment, mechanistic interpretability, and transparent reasoning systems. Our work addresses the critical challenge of ensuring AI systems remain beneficial, aligned, and understandable as they become more powerful.</p>
                 
-                <div style="background-color: rgba(30, 64, 175, 0.05); padding: 2rem; border-radius: 12px; border-left: 4px solid var(--primary); text-align: left; max-width: 800px; margin: 0 auto;">
+                <div style="background-color: rgba(44, 44, 44, 0.05); padding: 2rem; border-radius: 12px; border-left: 4px solid var(--primary); text-align: left; max-width: 800px; margin: 0 auto;">
                     <p style="font-style: italic; margin: 0; font-size: 1.1rem; line-height: 1.6;"><strong>Research Philosophy:</strong> We believe that advancing AI capabilities and AI safety must go hand in hand. Our research directly informs the development of safer, more transparent AI systems for critical applications.</p>
                 </div>
             </div>
@@ -680,7 +684,7 @@
             <div style="margin-bottom: 4rem;">
                 <h3 style="text-align: center; margin-bottom: 2rem; color: var(--primary);">Current Research Areas</h3>
                 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem;">
-                    <div style="background-color: var(--light); padding: 2rem; border-radius: 8px;">
+                    <div style="background-color: var(--cream); padding: 2rem; border-radius: 8px; border: 1px solid var(--silver);">
                         <h4 style="color: var(--primary-light); margin-bottom: 1rem;">Mechanistic Interpretability</h4>
                         <p>Developing methods to understand the internal mechanisms of neural networks, including causal abstraction theory and sparse autoencoders for knowledge disentanglement.</p>
                         <ul style="margin-left: 1.5rem; margin-top: 1rem;">
@@ -689,7 +693,7 @@
                             <li>Modular neural architectures</li>
                         </ul>
                     </div>
-                    <div style="background-color: var(--light); padding: 2rem; border-radius: 8px;">
+                    <div style="background-color: var(--cream); padding: 2rem; border-radius: 8px; border: 1px solid var(--silver);">
                         <h4 style="color: var(--primary-light); margin-bottom: 1rem;">AI Alignment & Safety</h4>
                         <p>Research into value learning, alignment verification, and safety mechanisms to ensure AI systems remain beneficial and aligned with human values.</p>
                         <ul style="margin-left: 1.5rem; margin-top: 1rem;">
@@ -698,7 +702,7 @@
                             <li>Safety monitoring frameworks</li>
                         </ul>
                     </div>
-                    <div style="background-color: var(--light); padding: 2rem; border-radius: 8px;">
+                    <div style="background-color: var(--cream); padding: 2rem; border-radius: 8px; border: 1px solid var(--silver);">
                         <h4 style="color: var(--primary-light); margin-bottom: 1rem;">Harmful Output Detection</h4>
                         <p>Developing SafetyNet and other systems to detect and prevent harmful, deceptive, or inappropriate AI outputs through behavioral modeling.</p>
                         <ul style="margin-left: 1.5rem; margin-top: 1rem;">
@@ -707,7 +711,7 @@
                             <li>Harmful content detection</li>
                         </ul>
                     </div>
-                    <div style="background-color: var(--light); padding: 2rem; border-radius: 8px;">
+                    <div style="background-color: var(--cream); padding: 2rem; border-radius: 8px; border: 1px solid var(--silver);">
                         <h4 style="color: var(--primary-light); margin-bottom: 1rem;">AI Governance & Policy</h4>
                         <p>Research into AI governance frameworks, regulatory approaches, and policy recommendations for safe AI development and deployment.</p>
                         <ul style="margin-left: 1.5rem; margin-top: 1rem;">
@@ -720,11 +724,11 @@
             </div>
             
             <!-- Research Impact -->
-            <div style="background-color: var(--light); padding: 2rem; border-radius: 8px;">
+            <div style="background-color: var(--cream); padding: 2rem; border-radius: 8px; border: 1px solid var(--silver);">
                 <h3 style="text-align: center; margin-bottom: 2rem; color: var(--primary);">Research Impact & Collaborations</h3>
                 <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem;">
                     <div style="text-align: center;">
-                        <div style="background-color: rgba(30, 64, 175, 0.1); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                        <div style="background-color: rgba(44, 44, 44, 0.1); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 30px; height: 30px; color: var(--primary);">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                             </svg>
@@ -733,7 +737,7 @@
                         <p>Research published in top AI conferences and journals</p>
                     </div>
                     <div style="text-align: center;">
-                        <div style="background-color: rgba(35, 92, 69, 0.1); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                        <div style="background-color: rgba(44, 44, 44, 0.1); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 30px; height: 30px; color: var(--primary);">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                             </svg>
@@ -742,7 +746,7 @@
                         <p>Collaborations with Stanford, Oxford, NTU, and other leading institutions</p>
                     </div>
                     <div style="text-align: center;">
-                        <div style="background-color: rgba(35, 92, 69, 0.1); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                        <div style="background-color: rgba(44, 44, 44, 0.1); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 30px; height: 30px; color: var(--primary);">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
@@ -751,7 +755,7 @@
                         <p>Research informing AI governance and regulatory frameworks</p>
                     </div>
                     <div style="text-align: center;">
-                        <div style="background-color: rgba(35, 92, 69, 0.1); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                        <div style="background-color: rgba(44, 44, 44, 0.1); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 30px; height: 30px; color: var(--primary);">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                             </svg>
@@ -775,13 +779,13 @@
             </div>
             
             <!-- Research to Market Bridge -->
-            <div style="background-color: white; padding: 2rem; border-radius: 8px; margin-bottom: 3rem; border-left: 4px solid var(--primary);">
+            <div style="background-color: white; padding: 2rem; border-radius: 8px; margin-bottom: 3rem; border-left: 4px solid var(--primary); border: 1px solid var(--silver);">
                 <h3 style="color: var(--primary); margin-bottom: 1rem;">From Research Lab to Legal Practice</h3>
                 <p style="font-size: 1.1rem;">Our legal AI solutions represent the practical application of years of research in AI alignment, interpretability, and safety. Every feature is grounded in peer-reviewed research and designed specifically for the ethical and professional requirements of legal practice.</p>
             </div>
             
             <div class="problem-grid">
-                <img src="why_blue.png" alt="Legal AI research applications" class="problem-img" />
+                <img src="why.png" alt="Legal AI research applications" class="problem-img" />
                 <div>
                     <h3 style="margin-bottom: 1.5rem; color: var(--primary);">The Research-Practice Gap</h3>
                     <p>Current AI systems used in legal practice lack the specialized safeguards and transparency that our research has shown to be essential for professional legal work. Our research directly addresses these fundamental challenges:</p>
@@ -791,7 +795,7 @@
                         <li><strong>Safety Research →</strong> Maintaining ethical compliance with professional conduct</li>
                         <li><strong>Governance Research →</strong> Delivering reliable analysis with full auditability</li>
                     </ul>
-                    <div style="background-color: rgba(30, 64, 175, 0.05); padding: 1.5rem; border-radius: 8px; margin-top: 1.5rem;">
+                    <div style="background-color: rgba(44, 44, 44, 0.05); padding: 1.5rem; border-radius: 8px; margin-top: 1.5rem;">
                         <p style="margin: 0; font-weight: 500;"><strong>Unique Value Proposition:</strong> The only legal AI solutions built by AI safety researchers, ensuring every feature is designed with transparency, alignment, and professional ethics as core requirements.</p>
                     </div>
                 </div>
@@ -842,7 +846,7 @@
             </div>
             
             <!-- Research Advantage -->
-            <div style="background-color: var(--light); padding: 2rem; border-radius: 8px; margin-top: 3rem;">
+            <div style="background-color: var(--cream); padding: 2rem; border-radius: 8px; margin-top: 3rem; border: 1px solid var(--silver);">
                 <h3 style="text-align: center; margin-bottom: 2rem; color: var(--primary);">The Research Advantage</h3>
                 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
                     <div style="text-align: center;">
@@ -1021,13 +1025,13 @@
                 <p>Founded on rigorous academic research with real-world impact</p>
             </div>
             <div style="max-width: 900px; margin: 0 auto;">
-                <div style="background-color: var(--light); padding: 2rem; border-radius: 8px; margin-bottom: 3rem;">
+                <div style="background-color: var(--cream); padding: 2rem; border-radius: 8px; margin-bottom: 3rem; border: 1px solid var(--silver);">
                     <h3 style="text-align: center; margin-bottom: 1.5rem;">Our Foundation</h3>
                     <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;">WhiteGen.ai was founded by researchers with deep expertise in AI alignment, mechanistic interpretability, and AI safety. Our approach combines rigorous academic research with practical applications in critical domains.</p>
                     
                     <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 2rem;">
                         <div style="text-align: center;">
-                            <div style="background-color: rgba(30, 64, 175, 0.1); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                            <div style="background-color: rgba(44, 44, 44, 0.1); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 30px; height: 30px; color: var(--primary);">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                                 </svg>
@@ -1036,7 +1040,7 @@
                             <p>Published research in top AI conferences and journals on alignment and interpretability</p>
                         </div>
                         <div style="text-align: center;">
-                            <div style="background-color: rgba(30, 64, 175, 0.1); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                            <div style="background-color: rgba(44, 44, 44, 0.1); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 30px; height: 30px; color: var(--primary);">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                                 </svg>
@@ -1045,7 +1049,7 @@
                             <p>Collaborations with leading universities and research institutions worldwide</p>
                         </div>
                         <div style="text-align: center;">
-                            <div style="background-color: rgba(30, 64, 175, 0.1); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
+                            <div style="background-color: rgba(44, 44, 44, 0.1); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem;">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 30px; height: 30px; color: var(--primary);">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                                 </svg>
@@ -1069,7 +1073,7 @@
             <div style="max-width: 1000px; margin: 0 auto;">
                 <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
                     <!-- Research Partnerships -->
-                    <div style="background-color: white; border-radius: 8px; padding: 2rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);">
+                    <div style="background-color: white; border-radius: 8px; padding: 2rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); border: 1px solid var(--silver);">
                         <h3 style="margin-bottom: 1.5rem; color: var(--primary);">Research Collaborations</h3>
                         <p style="margin-bottom: 1.5rem;">Partner with our research institute on advancing AI safety, alignment, and governance research.</p>
                         
@@ -1077,7 +1081,7 @@
                             <h4 style="font-size: 1.1rem; margin-bottom: 1rem;">Collaboration Opportunities:</h4>
                             <ul style="list-style-type: none; padding-left: 0;">
                                 <li style="display: flex; align-items: flex-start; margin-bottom: 0.8rem;">
-                                    <div style="background-color: rgba(30, 64, 175, 0.1); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0; margin-top: 2px;">
+                                    <div style="background-color: rgba(44, 44, 44, 0.1); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0; margin-top: 2px;">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 12px; height: 12px; color: var(--primary);">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                         </svg>
@@ -1085,7 +1089,7 @@
                                     <span>Joint research projects and publications</span>
                                 </li>
                                 <li style="display: flex; align-items: flex-start; margin-bottom: 0.8rem;">
-                                    <div style="background-color: rgba(30, 64, 175, 0.1); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0; margin-top: 2px;">
+                                    <div style="background-color: rgba(44, 44, 44, 0.1); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0; margin-top: 2px;">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 12px; height: 12px; color: var(--primary);">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                         </svg>
@@ -1093,7 +1097,7 @@
                                     <span>Graduate student research programs</span>
                                 </li>
                                 <li style="display: flex; align-items: flex-start; margin-bottom: 0.8rem;">
-                                    <div style="background-color: rgba(30, 64, 175, 0.1); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0; margin-top: 2px;">
+                                    <div style="background-color: rgba(44, 44, 44, 0.1); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0; margin-top: 2px;">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 12px; height: 12px; color: var(--primary);">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                         </svg>
@@ -1101,7 +1105,7 @@
                                     <span>AI governance policy research</span>
                                 </li>
                                 <li style="display: flex; align-items: flex-start; margin-bottom: 0.8rem;">
-                                    <div style="background-color: rgba(30, 64, 175, 0.1); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0; margin-top: 2px;">
+                                    <div style="background-color: rgba(44, 44, 44, 0.1); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0; margin-top: 2px;">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 12px; height: 12px; color: var(--primary);">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                         </svg>
@@ -1117,7 +1121,7 @@
                     </div>
                     
                     <!-- Commercial Solutions -->
-                    <div style="background-color: white; border-radius: 8px; padding: 2rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);">
+                    <div style="background-color: white; border-radius: 8px; padding: 2rem; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); border: 1px solid var(--silver);">
                         <h3 style="margin-bottom: 1.5rem; color: var(--primary);">Legal AI Solutions</h3>
                         <p style="margin-bottom: 1.5rem;">Access our research-backed legal AI solutions designed specifically for professional legal practice.</p>
                         
@@ -1125,7 +1129,7 @@
                             <h4 style="font-size: 1.1rem; margin-bottom: 1rem;">Professional Services Include:</h4>
                             <ul style="list-style-type: none; padding-left: 0;">
                                 <li style="display: flex; align-items: flex-start; margin-bottom: 0.8rem;">
-                                    <div style="background-color: rgba(30, 64, 175, 0.1); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0; margin-top: 2px;">
+                                    <div style="background-color: rgba(44, 44, 44, 0.1); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0; margin-top: 2px;">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 12px; height: 12px; color: var(--primary);">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                         </svg>
@@ -1133,7 +1137,7 @@
                                     <span>Transparent legal research with verified citations</span>
                                 </li>
                                 <li style="display: flex; align-items: flex-start; margin-bottom: 0.8rem;">
-                                    <div style="background-color: rgba(30, 64, 175, 0.1); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0; margin-top: 2px;">
+                                    <div style="background-color: rgba(44, 44, 44, 0.1); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0; margin-top: 2px;">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 12px; height: 12px; color: var(--primary);">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                         </svg>
@@ -1141,7 +1145,7 @@
                                     <span>Attorney-client privilege protection</span>
                                 </li>
                                 <li style="display: flex; align-items: flex-start; margin-bottom: 0.8rem;">
-                                    <div style="background-color: rgba(30, 64, 175, 0.1); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0; margin-top: 2px;">
+                                    <div style="background-color: rgba(44, 44, 44, 0.1); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0; margin-top: 2px;">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 12px; height: 12px; color: var(--primary);">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                         </svg>
@@ -1149,7 +1153,7 @@
                                     <span>Legal ethics compliance monitoring</span>
                                 </li>
                                 <li style="display: flex; align-items: flex-start; margin-bottom: 0.8rem;">
-                                    <div style="background-color: rgba(30, 64, 175, 0.1); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0; margin-top: 2px;">
+                                    <div style="background-color: rgba(44, 44, 44, 0.1); width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-right: 1rem; flex-shrink: 0; margin-top: 2px;">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="width: 12px; height: 12px; color: var(--primary);">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                                         </svg>
